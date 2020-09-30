@@ -13,7 +13,8 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.2",
-    "ext-curl": "*"
+    "ext-curl": "*",
+    "runn/core": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "8.*"

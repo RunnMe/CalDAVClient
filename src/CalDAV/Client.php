@@ -2,7 +2,18 @@
 
 namespace Runn\CalDAV;
 
-class Client
+use Runn\Core\Config;
+use Runn\Core\ConfigAwareInterface;
+use Runn\Core\ConfigAwareTrait;
+
+class Client implements ConfigAwareInterface
 {
+
+    use ConfigAwareTrait;
+
+    public function __construct(Config $config)
+    {
+        $this->setConfig($config);
+    }
 
 }
